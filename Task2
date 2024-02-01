@@ -6,6 +6,15 @@
 
 In JavaScript, an object is a standalone entity that can contain properties and methods. Properties are like variables that belong to an object, while methods are functions that belong to an object.
 
+Object.create():
+
+The method creates a new object, using an existing object as the prototype of the newly created object.
+
+using the object literal example as prototype-
+
+var car2 = Object.create(car);
+
+
 Object constructor:
 
 Useful when we require to create multiple objects of similar type. In this case, a constructor (kind of blueprint) is created and multiple objects can be initialized using the new keyword using the constructor as a wrapper for the newly created objects.
