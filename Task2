@@ -1,0 +1,34 @@
+ objects and its internal representation in Javascript
+
+ Objects are the representation of real-world entities in any language representing things by defining its properties along with their values. In Javascript, objects may be defined as an unordered collection of related data, of primitive or reference types, in the form of “key: value” pairs.
+
+ object literal is a comma-separated list of name-value pairs wrapped in curly braces. Object literals encapsulate data, enclosing it in a tidy package.
+
+In JavaScript, an object is a standalone entity that can contain properties and methods. Properties are like variables that belong to an object, while methods are functions that belong to an object.
+
+Object constructor:
+
+Useful when we require to create multiple objects of similar type. In this case, a constructor (kind of blueprint) is created and multiple objects can be initialized using the new keyword using the constructor as a wrapper for the newly created objects.
+For example
+fuction person(name,age,weight){
+    Name= name;
+    Age=age;
+    Weight=weight;
+}
+
+Object.assign():
+
+It is used to copy the values and properties from one or more source objects to a target object. It invokes getters and setters since it uses both [[Get]] on the source and [[Set]] on the target.
+
+where properties from three source objects are getting assigned to a new object using Object.assign()
+For example:
+Input : var obj1 = { a: 1 };
+var obj2 = { b: 2 };
+var obj3 = { c: 3 };
+var new_obj = Object.assign(o1, o2, o3);
+console.log(new_obj);
+Output : Object { a: 1, b: 2, c: 3 }
+
+
+
+
